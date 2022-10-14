@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import sklearn as skl
 
-plt.style.use('./C1W1/deeplearning.mplstyle')
+plt.style.use('./C1W1/deeplearning.mplstyle')  # type: ignore
 
 x_train=np.array([1.0,2.0])
 y_train=np.array([300.0,500.0])
@@ -25,7 +25,7 @@ w=200
 b=100
 tmp_f_wb=compute_model_output(x_train,w,b)
 plt.plot(x_train, tmp_f_wb, c='b',label='Our Prediction')
-plt.scatter(x_train, y_train, marker='x', c='r',label='Actual Values')
+plt.scatter(x_train, y_train, marker='x', c='r',label='Actual Values')  # type: ignore
 plt.title("Housing Prices")
 plt.ylabel('Price (in 1000s of dollars)')
 plt.xlabel('Size (1000 sqft)')

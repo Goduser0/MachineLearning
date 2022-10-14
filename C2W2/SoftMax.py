@@ -11,7 +11,7 @@ model=Sequential(
     ]
 )
 
-model.compile(loss=SparseCategoricalCrossentropy)
+model.compile(loss=SparseCategoricalCrossentropy())
 model.fit(X,Y,epochs=100)
 
 
